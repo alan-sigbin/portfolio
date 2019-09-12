@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Mono', monospace;
+  }
+.space {
+  margin-bottom: 20rem;
+}
+.back{
+  width: 10%;
+  height: auto;
+}
+.f-mono{
+    font-family: 'PT Mono', monospace;
+}
+.f10{
+  font-size: 0.625rem;
+}  
+.back-darkslate {
+    background-color: #232f3f;
+}
+
+.bannerimg {
+    width: 30%;
+}
+.bannerimg2 {
+  width: 20%;
+}
+.contactimg {
+  width: 20%;
+}
+.cover{
+    /* position:fixed; */
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.profileimg{
+    padding: 10rem;
+    margin: auto;
+    -webkit-box-shadow: 9px 9px 5px 2px #818181; 
+    box-shadow: 9px 9px 5px 2px #818181;
+}
+/* OVERLAY */
+.skillcontainer {
+position: relative;
+margin-top: 8px;
+vertical-align: middle;
+}
+
+.skillimage {
+display: block;
+width: 100%;
+height: auto;
+vertical-align: middle;
+}
+
+.skilloverlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: #A9B3CE;
+}
+
+.skillcontainer:hover .skilloverlay {
+opacity: 1;
+}
+
+.skilltext {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.dropshadow {
+  -webkit-box-shadow: 13px 12px 3px 2px #000000; 
+  box-shadow: 13px 12px 3px 2px #000000;
+}
+
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  background-color: #FFF;
+  color: #ba0018;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.back2Top-img {
+  width: 100%;
+  height: auto;
+}
+
+#back2Top:hover {
+  background-color:#555;;
+}
+
+/* ----------------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+ .flip-in-hor-bottom {
+	-webkit-animation: flip-in-hor-bottom 1s linear both;
+	        animation: flip-in-hor-bottom 1s linear both;
+}
+@-webkit-keyframes flip-in-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(80deg);
+              transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  
